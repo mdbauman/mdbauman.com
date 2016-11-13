@@ -1,0 +1,55 @@
+body{
+  width: 400px;
+  margin: auto;
+  font-family: Helvetica, sans-serif;
+}
+h1{
+  padding: 20px;  
+}
+a{
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 2;
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+a:after{
+  mix-blend-mode: difference;
+  padding: 20px;
+}
+.background{
+  width: 0;
+  transition: width .5s;
+}
+.background:hover{
+  width: 100%;
+}
+.blog{
+  background-color: #f0f;
+}
+.blog:after{
+  color: #0f0;
+  content: "Blog";
+}
+.code{
+  background-color: #0ff;
+}
+.code:after{
+  color: #f00;
+  content: "Code";
+}
+.drawing{
+  background-color: #f00;
+}
+.drawing:after{
+  color: #0ff;
+  content: "Drawing";
+}
+.twitter{
+  background-color: #0f0;
+}
+.twitter:after{
+  color: #f0f;
+  content: "Twitter";
+}
