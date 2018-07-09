@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@font-face {
+    font-family: 'RobotoFallback';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/roboto-v18-latin-regular.eot');
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('fonts/roboto-v18-latin-regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-v18-latin-regular.woff2') format('woff2'),
+         url('fonts/roboto-v18-latin-regular.woff') format('woff'),
+         url('fonts/roboto-v18-latin-regular.ttf') format('truetype'),
+         url('fonts/roboto-v18-latin-regular.svg#Roboto') format('svg');
+}
 *{
-    font-family: Helvetica, sans-serif;
+    font-family: Roboto, RobotoFallback, Helvetica, sans-serif;
 }
 html,body{
     width: 100%;
